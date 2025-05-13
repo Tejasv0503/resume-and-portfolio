@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTemplates | Resume & Portfolio Templates</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #343a40;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    ul.menu {
+      list-style: none;
+      display: flex;
+    }
+
+    ul.menu li {
+      position: relative;
+      margin-left: 30px;
+    }
+
+    ul.menu li a {
+      text-decoration: none;
+      color: #343a40;
+      padding: 10px;
+      transition: color 0.3s;
+    }
+
+    ul.menu li a:hover {
+      color: #007bff;
+    }
+
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background: #ffffff;
+      list-style: none;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      min-width: 180px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    ul.menu li:hover > ul.submenu {
+      display: block;
+    }
+
+    ul.submenu li {
+      margin-bottom: 10px;
+    }
+
+    ul.submenu li:last-child {
+      margin-bottom: 0;
+    }
+
+    section {
+      padding: 80px 30px;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #e9ecef, #dee2e6);
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #212529;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #495057;
+      margin-top: 10px;
+    }
+
+    .templates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .template-card {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .template-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .template-card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .template-card h3 {
+      color: #223345;
+      margin-bottom: 10px;
+    }
+
+    .template-card p {
+      color: #6c757d;
+      font-size: 14px;
+    }
+
+    #about, #contact {
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+    }
+
+    footer {
+      background: #ffffff;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ProTemplates</div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#templates">Templates</a>
+          <ul class="submenu">
+            <li><a href="resume_template.html">Resume Templates</a></li>
+            <li><a href="portfolio_template.html">Portfolio Templates</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Design Your Future</h1>
+    <p>Professional resume and portfolio templates to help you stand out.</p>
+  </section>
+
+  <section id="templates">
+    <h2>Our Templates</h2>
+    <div class="templates-grid">
+      <div class="template-card">
+        <img src="" alt="Modern Resume">
+        <h3>Modern Resume</h3>
+        <p>Sleek, ATS-friendly design to showcase your skills and achievements effectively.</p>
+      </div>
+      <div class="template-card">
+        <img src="" alt="Creative Portfolio">
+        <h3>Creative Portfolio</h3>
+        <p>Perfect for designers, photographers, and artists to highlight visual work.</p>
+      </div>
+      <div class="template-card">
+        <img src="" alt="Professional Resume">
+        <h3>Professional Resume</h3>
+        <p>Formal and clean layout ideal for corporate and business roles.</p>
+      </div>
+      <div class="template-card">
+        <img src="" alt="Personal Portfolio">
+        <h3>Personal Portfolio</h3>
+        <p>Minimalist design for freelancers to showcase their journey and projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At ProTemplates, we believe that a well-designed resume or portfolio is key to making a lasting impression. Our collection of templates is crafted to balance aesthetics with functionality—making it easier for you to present yourself confidently to potential employers or clients.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions or need help choosing a template, feel free to reach out to us at <strong>support@protemplates.com</strong> or call us at <strong>+123 456 7890</strong>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ProTemplates. All rights reserved.</p>
+  </footer>
+</body>
+</html>
